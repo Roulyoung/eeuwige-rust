@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/eeuwige-rust/" : "/",
+  // Use relative paths in production so assets work on GitHub Pages subfolders.
+  base: mode === "production" ? "./" : "/",
   server: {
     host: true,
     port: Number(process.env.PORT) || 4173,
