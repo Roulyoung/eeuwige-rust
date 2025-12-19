@@ -12,24 +12,29 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-serif text-lg">ق</span>
-              </div>
+              <img
+                src="/images/logo.jpg"
+                alt="Logo Eeuwige Islamitische Begraafplaats"
+                className="w-12 h-12 rounded-lg object-cover border border-background/20"
+                loading="lazy"
+              />
               <div>
-                <span className="font-serif text-lg font-semibold text-background">Eeuwige Islamitische</span>
+                <span className="font-serif text-lg font-semibold text-background block">
+                  Eeuwige Islamitische
+                </span>
                 <span className="block text-xs text-background/60">Begraafplaats Nederland</span>
               </div>
             </div>
             <p className="text-background/70 leading-relaxed max-w-md">
-              De islamitische familiebegraafplaats in Nederland. Wij combineren de voorschriften 
-              van de islamitische wetgeving met de lokale regelgeving om een veilige en 
-              respectvolle plek te bieden voor het begraven van uw dierbaren.
+              De islamitische familiebegraafplaats in Nederland. Wij combineren de voorschriften van de
+              islamitische wetgeving met de lokale regelgeving om een veilige en respectvolle plek te bieden
+              voor het begraven van uw dierbaren.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif font-semibold text-lg mb-4">Snelle Links</h4>
+            <h4 className="font-serif font-semibold text-lg mb-4">Snelle links</h4>
             <ul className="space-y-3">
               <li>
                 <button onClick={() => scrollToSection("home")} className="text-background/70 hover:text-accent transition-colors">
@@ -48,7 +53,7 @@ const Footer = () => {
               </li>
               <li>
                 <button onClick={() => scrollToSection("over-ons")} className="text-background/70 hover:text-accent transition-colors">
-                  Over Ons
+                  Over ons
                 </button>
               </li>
               <li>
@@ -84,7 +89,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Stichting Familiegraf. Alle rechten voorbehouden.
+            {new Date().getFullYear()} Stichting Familiegraf. Alle rechten voorbehouden.
           </p>
           <p className="text-background/50 text-sm">
             KVK: 93863381

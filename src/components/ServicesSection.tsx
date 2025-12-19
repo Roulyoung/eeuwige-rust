@@ -3,33 +3,33 @@ import { Shield, Heart, Scale, Users, Home, Repeat } from "lucide-react";
 const services = [
   {
     icon: Home,
-    title: "Permanente Familiegrafplaatsen",
-    description: "Geen grafruiming. Eeuwigdurend grafrecht van 99 jaar met mogelijkheid tot verlenging.",
+    title: "Permanente familiegrafplaatsen",
+    description: "Geen grafruiming: 99 jaar contractduur met de mogelijkheid tot verlenging.",
   },
   {
     icon: Shield,
-    title: "Volledige Privacy",
-    description: "Apart-ondergrondse ruimten voor mannen en vrouwen, met respect voor islamitische waarden.",
+    title: "Volledige privacy",
+    description: "Gescheiden ondergrondse ruimten voor mannen en vrouwen, geheel in lijn met islamitische waarden.",
   },
   {
     icon: Scale,
-    title: "100% Conform Wetgeving",
-    description: "In overeenstemming met islamitische regels én Nederlandse wetgeving.",
+    title: "Conform sharia en wetgeving",
+    description: "100% in overeenstemming met islamitische richtlijnen en de Nederlandse wet.",
   },
   {
     icon: Users,
-    title: "Volledige Dienstverlening",
+    title: "Volledige dienstverlening",
     description: "Begeleiding bij administratieve en juridische procedures, rituele wassing en gebed.",
   },
   {
     icon: Repeat,
-    title: "Islamitisch Hergebruik",
-    description: "Mogelijkheid tot hergebruik van graven na elke 10 jaar, met capaciteit voor 360 overledenen.",
+    title: "Efficient ontwerp",
+    description: "Twee kamers met elk 18 individuele graven (6x3), herbruikbaar elke tien jaar volgens de regels.",
   },
   {
     icon: Heart,
-    title: "Gemoedsrust voor Familie",
-    description: "Een rustige, veilige omgeving omgeven door natuur voor het bezoeken van uw dierbaren.",
+    title: "Toekomstbestendig",
+    description: "Capaciteit tot 360 overledenen per familiegraf, ontwikkeld voor komende generaties.",
   },
 ];
 
@@ -45,16 +45,15 @@ const ServicesSection = () => {
           </h2>
           <div className="geometric-border w-32 mx-auto mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Bij de Eeuwige Islamitische Begraafplaats bieden wij een volledige dienstverlening, 
-            die gemoedsrust garandeert voor uw familie met volledige naleving van de islamitische 
-            voorschriften en de Nederlandse wetgeving.
+            Bij de Eeuwige islamitische begraafplaats bieden wij een volledige dienstverlening die gemoedsrust
+            garandeert. Alles gebeurt met respect voor de islamitische voorschriften en de Nederlandse wetgeving.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-card rounded-xl p-8 shadow-soft hover:shadow-card transition-all duration-300 border border-border hover:border-primary/20"
             >
@@ -76,15 +75,15 @@ const ServicesSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <p className="text-4xl md:text-5xl font-serif font-bold text-accent mb-2">99</p>
-              <p className="text-primary-foreground/80 text-sm">Jaar Contract</p>
+              <p className="text-primary-foreground/80 text-sm">Jaar contract</p>
             </div>
             <div>
               <p className="text-4xl md:text-5xl font-serif font-bold text-accent mb-2">360</p>
-              <p className="text-primary-foreground/80 text-sm">Capaciteit per Graf</p>
+              <p className="text-primary-foreground/80 text-sm">Capaciteit per familiegraf</p>
             </div>
             <div>
               <p className="text-4xl md:text-5xl font-serif font-bold text-accent mb-2">40</p>
-              <p className="text-primary-foreground/80 text-sm">m² per Locatie</p>
+              <p className="text-primary-foreground/80 text-sm">m2 per locatie</p>
             </div>
             <div>
               <p className="text-4xl md:text-5xl font-serif font-bold text-accent mb-2">24/7</p>

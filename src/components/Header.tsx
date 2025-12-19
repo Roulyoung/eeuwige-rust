@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -30,9 +30,12 @@ const Header = () => {
         {/* Main nav */}
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-serif text-lg">ق</span>
-            </div>
+            <img
+              src="/images/logo.jpg"
+              alt="Logo Eeuwige Islamitische Begraafplaats"
+              className="w-12 h-12 rounded-lg object-cover border border-border"
+              loading="lazy"
+            />
             <div className="flex flex-col">
               <span className="font-serif text-lg font-semibold text-foreground leading-tight">Eeuwige Islamitische</span>
               <span className="text-xs text-muted-foreground">Begraafplaats Nederland</span>
@@ -58,7 +61,7 @@ const Header = () => {
           </div>
 
           <Button onClick={() => scrollToSection("contact")} variant="default" size="default">
-            Neem Contact Op
+            Neem contact op
           </Button>
         </nav>
       </div>

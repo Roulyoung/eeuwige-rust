@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Facebook, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -79,6 +79,15 @@ const ContactSection = () => {
                 <h4 className="font-semibold text-foreground mb-1">Facebook</h4>
                 <p className="text-muted-foreground">Stichting Familiegraf</p>
               </div>
+            </div>
+
+            <div className="overflow-hidden rounded-xl shadow-soft border border-border">
+              <img
+                src="/images/contact-side.jpg"
+                alt="Ingang van de begraafplaats"
+                className="w-full h-56 object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
